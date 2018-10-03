@@ -1,0 +1,73 @@
+converted_from = []
+converted_to = []
+
+
+
+def c2k():
+	c = int(input("Enter the temparature in celcius "))
+	k = c+273;
+	print("%d celcius is equal to %d Kelvin"%(c,k))
+	converted_from.append(c)
+	converted_to.append(k)
+
+
+
+def k2c():
+	k = int(input("Enter the temparature in Kelvin "))
+	c = k-273;
+	print("%d kelvin is equal to %d celcius"%(k,c))
+	converted_from.append(k)
+	converted_to.append(c)
+
+
+#def c2f():
+#	c = int(input("Enter the temparature in Celcius "))
+#	f = (c*1.8)+32
+#	print("%d celcius is equal to %d fahrenheit"%(c,f))
+
+#def f2c():
+	#f = int(input("Enter the temparature in Fahrenheit "))
+	#c = ((f-32)*5)/9
+	#print("%d fahrenheit is equal to %d celcius"%(f,c))
+
+#def f2k():
+#	f = int(input("Enter the temparature in Fahrenheit "))
+#	k = (((f-32)*5)/9)+273
+#	print("%d fahrenheit is equal to %d kelvin"%(f,k))
+
+#def k2f():
+	#k = int(input("Enter the temparature in Kelvin "))
+	#f = ((9/5)*(k-273))+32
+	#print("%d kelvin is equal to %d fahrenheit"%(k,f))
+
+
+choice =0
+while choice!=5:
+	choice = int(input("Enter 1 to convert Celcius to Kelvin\nEnter 2 to convert Kelvin to Celcius\nEnter 3 to see the values which you converted\nEnter 4 to see the values obtained after respective conversions\nEnter 5 to exit\n"))
+	if choice==1:
+		c2k()
+	elif choice==2:
+		k2c()
+	#elif choice==3:
+	#	c2f()
+	#elif choice==4:
+	#	f2c()
+	#elif choice==5:
+	#	f2k()
+	#elif choice==6:
+	#	k2f()
+	elif choice==3:
+		print("The values which you converted above are:",converted_from)
+	elif choice==4:
+		print("The values which you obtained after repective conversions are:",converted_to)
+	elif choice==5:
+		exit()
+	
+
+	
+
+
+
+	
+
+
